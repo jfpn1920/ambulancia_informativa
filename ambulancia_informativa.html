@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ambulancia informativa</title>
+    <link rel="stylesheet" href="ambulancia_informativa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="ambulancia_informativa.js" defer></script>
+</head>
+<body>
+    <!---------------------------------------->
+    <!--|estructuracion_alumnos_registrados|-->
+    <!---------------------------------------->
+    <main class="contenedor_ambulancia">
+        <header class="encabezado_ambulancia">
+            <div class="icono_ambulancia">
+                <i class="fa-solid fa-truck-medical"></i>
+            </div>
+            <div>
+                <h1>Ambulancia Informativa</h1>
+                <p>Conoce la información básica del vehículo.</p>
+            </div>
+        </header>
+        <!------------------------>
+        <!--|tarjeta_ambulancia|-->
+        <!------------------------>
+        <section class="tarjeta_ambulancia">
+            <div class="cabecera_tarjeta">
+                <div class="imagen_ambulancia">
+                    <i class="fa-solid fa-truck-medical"></i>
+                </div>
+                <button id="boton_favorito" class="boton_favorito" type="button" aria-label="Marcar como favorita"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="informacion_principal">
+                <span class="etiqueta_servicio">Servicio de emergencia</span>
+                <h2>Ambulancia Alfa 01</h2>
+                <p>Vehículo equipado para brindar atención y traslado de pacientes.</p>
+            </div>
+            <!------------------------>
+            <!--|informacion_basica|-->
+            <!------------------------>
+            <div class="datos_ambulancia">
+                <div class="dato">
+                    <i class="fa-solid fa-hospital"></i>
+                    <div>
+                        <span>Tipo</span>
+                        <strong>Asistencia básica</strong>
+                    </div>
+                </div>
+                <div class="dato">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <span>Ubicación</span>
+                        <strong>Base Central</strong>
+                    </div>
+                </div>
+                <div class="dato">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <span>Emergencias</span>
+                        <strong>123</strong>
+                    </div>
+                </div>
+            </div>
+            <!----------------------------------->
+            <!--|estadoestado_de_la_ambulancia|-->
+            <!----------------------------------->
+            <div class="estado_ambulancia">
+                <span>Estado actual</span>
+                <strong id="estado_actual">Disponible</strong>
+            </div>
+            <!------------->
+            <!--|botones|-->
+            <!------------->
+            <div class="acciones_ambulancia">
+                <button id="boton_estado" class="boton_estado" type="button"><i class="fa-solid fa-rotate"></i>Cambiar estado</button>
+                <button id="boton_informacion" class="boton_informacion" type="button"><i class="fa-solid fa-circle-info"></i>Más información</button>
+            </div>
+            <!--------------------------->
+            <!--|informacion_adicional|-->
+            <!--------------------------->
+            <div id="informacion_adicional" class="informacion_adicional">
+                <h3>Información adicional</h3>
+                <p>La ambulancia cuenta con equipo básico para atención y traslado.</p>
+                <ul>
+                    <li>Personal capacitado.</li>
+                    <li>Botiquín de primeros auxilios.</li>
+                    <li>Camilla de transporte.</li>
+                    <li>Equipo de comunicación.</li>
+                </ul>
+            </div>
+            <!---------------------------->
+            <!--|aviso_de_la_ambulancia|-->
+            <!---------------------------->
+            <div class="aviso_ambulancia">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span>En una emergencia comunícate con los servicios de emergencia.</span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
